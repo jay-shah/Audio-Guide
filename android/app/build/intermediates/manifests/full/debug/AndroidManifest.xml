@@ -25,6 +25,7 @@
             android:name="com.app.SplashActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
             android:label="@string/app_name"
+            android:screenOrientation="portrait"
             android:theme="@style/splashTheme"
             android:windowSoftInputMode="adjustResize" >
             <intent-filter>
@@ -33,7 +34,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.app.MainActivity" />
+        <activity
+            android:name="com.app.MainActivity"
+            android:screenOrientation="portrait" />
         <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
     </application>
 

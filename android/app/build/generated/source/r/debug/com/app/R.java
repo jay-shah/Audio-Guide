@@ -2147,7 +2147,8 @@ public final class R {
   }
   public static final class raw {
     public static final int advertising=0x7f0b0000;
-    public static final int welcome=0x7f0b0001;
+    public static final int haveli_atrium=0x7f0b0001;
+    public static final int welcome=0x7f0b0002;
   }
   public static final class string {
     public static final int abc_action_bar_home_description=0x7f0c0000;

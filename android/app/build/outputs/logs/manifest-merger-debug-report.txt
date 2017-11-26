@@ -1,25 +1,25 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/Jay/Desktop/AudioGuide/android/app/src/main/AndroidManifest.xml:1:1-35:12
-INJECTED from /Users/Jay/Desktop/AudioGuide/android/app/src/main/AndroidManifest.xml:1:1-35:12
-INJECTED from /Users/Jay/Desktop/AudioGuide/android/app/src/main/AndroidManifest.xml:1:1-35:12
-INJECTED from /Users/Jay/Desktop/AudioGuide/android/app/src/main/AndroidManifest.xml:1:1-35:12
+ADDED from /Users/Jay/Desktop/AudioGuide/android/app/src/main/AndroidManifest.xml:1:1-39:12
+INJECTED from /Users/Jay/Desktop/AudioGuide/android/app/src/main/AndroidManifest.xml:1:1-39:12
+INJECTED from /Users/Jay/Desktop/AudioGuide/android/app/src/main/AndroidManifest.xml:1:1-39:12
+INJECTED from /Users/Jay/Desktop/AudioGuide/android/app/src/main/AndroidManifest.xml:1:1-39:12
 MERGED from [:react-native-sound] /Users/Jay/Desktop/AudioGuide/node_modules/react-native-sound/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-13:12
-MERGED from [com.facebook.react:react-native:0.49.5] /Users/Jay/.gradle/caches/transforms-1/files-1.1/react-native-0.49.5.aar/71f44e977a76aceaa2201f6030b36533/AndroidManifest.xml:2:1-15:12
-MERGED from [com.android.support:appcompat-v7:23.0.1] /Users/Jay/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/16a835034a2041c3e9c1a6aea0f2bde9/AndroidManifest.xml:17:1-24:12
-MERGED from [com.android.support:support-v4:23.0.1] /Users/Jay/.gradle/caches/transforms-1/files-1.1/support-v4-23.0.1.aar/00d5353be07b38773694ac809430c5ec/AndroidManifest.xml:17:1-24:12
-MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] /Users/Jay/.gradle/caches/transforms-1/files-1.1/textlayoutbuilder-1.0.0.aar/2fecf42cf4630e6ba9573b6dc53770d2/AndroidManifest.xml:10:1-18:12
-MERGED from [com.facebook.fresco:fresco:1.3.0] /Users/Jay/.gradle/caches/transforms-1/files-1.1/fresco-1.3.0.aar/7e234be632ba8cd0cd402de4d3e8a8db/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.3.0] /Users/Jay/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.3.0.aar/26c1ab12022df114634b06ba997722f3/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.soloader:soloader:0.1.0] /Users/Jay/.gradle/caches/transforms-1/files-1.1/soloader-0.1.0.aar/d1318ca23975bb8dcccdccc6096ec98d/AndroidManifest.xml:1:1-4:12
-MERGED from [org.webkit:android-jsc:r174650] /Users/Jay/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/26919228e92dc32b5501ffbea55a0bcb/AndroidManifest.xml:1:1-3:12
-MERGED from [com.facebook.fresco:drawee:1.3.0] /Users/Jay/.gradle/caches/transforms-1/files-1.1/drawee-1.3.0.aar/c2ecf586c01c56c1e39ec45d8ff278d9/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:imagepipeline:1.3.0] /Users/Jay/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.3.0.aar/2c7bb3f20c9e5bb290af38e22c2ea7ce/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:imagepipeline-base:1.3.0] /Users/Jay/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.3.0.aar/4fceb072ee4d37fd6a124802b9ebacb6/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:fbcore:1.3.0] /Users/Jay/.gradle/caches/transforms-1/files-1.1/fbcore-1.3.0.aar/93b83549913bcf163a5c5945c939a9ea/AndroidManifest.xml:2:1-9:12
-INJECTED from /Users/Jay/Desktop/AudioGuide/android/app/src/main/AndroidManifest.xml:1:1-35:12
-INJECTED from /Users/Jay/Desktop/AudioGuide/android/app/src/main/AndroidManifest.xml:1:1-35:12
-INJECTED from /Users/Jay/Desktop/AudioGuide/android/app/src/main/AndroidManifest.xml:1:1-35:12
+MERGED from [com.facebook.react:react-native:0.49.5] /Users/Jay/.gradle/caches/transforms-1/files-1.1/react-native-0.49.5.aar/4176933fd9c609b54e57e34e37349e0e/AndroidManifest.xml:2:1-15:12
+MERGED from [com.android.support:appcompat-v7:23.0.1] /Users/Jay/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/f4ef0ec65d4e4304e6f6921ff6d1ccdf/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:support-v4:23.0.1] /Users/Jay/.gradle/caches/transforms-1/files-1.1/support-v4-23.0.1.aar/16bf970ca27c0334eaa0da231bb1e0bd/AndroidManifest.xml:17:1-24:12
+MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] /Users/Jay/.gradle/caches/transforms-1/files-1.1/textlayoutbuilder-1.0.0.aar/3d6b892fa86c77cc909209d2dd3ac77e/AndroidManifest.xml:10:1-18:12
+MERGED from [com.facebook.fresco:fresco:1.3.0] /Users/Jay/.gradle/caches/transforms-1/files-1.1/fresco-1.3.0.aar/1b810d080b1484e9f3e285f2ec73afe2/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.3.0] /Users/Jay/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.3.0.aar/3e02fea305ff0ab9f2d547b43a209696/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.soloader:soloader:0.1.0] /Users/Jay/.gradle/caches/transforms-1/files-1.1/soloader-0.1.0.aar/b7be7ebad94738fb5b91a0092c015816/AndroidManifest.xml:1:1-4:12
+MERGED from [org.webkit:android-jsc:r174650] /Users/Jay/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/09c3eb4fe679ecc2a5d2a37b12dbd07c/AndroidManifest.xml:1:1-3:12
+MERGED from [com.facebook.fresco:drawee:1.3.0] /Users/Jay/.gradle/caches/transforms-1/files-1.1/drawee-1.3.0.aar/9b43ef5807fe5d712e3684556671bdbd/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline:1.3.0] /Users/Jay/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.3.0.aar/414a4e3581a3df8d33547c7ccdb060d1/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-base:1.3.0] /Users/Jay/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.3.0.aar/aacceb86588ce8bd307dbe17c3647798/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:fbcore:1.3.0] /Users/Jay/.gradle/caches/transforms-1/files-1.1/fbcore-1.3.0.aar/abb37dd265f50c9f35005447d1f09a5b/AndroidManifest.xml:2:1-9:12
+INJECTED from /Users/Jay/Desktop/AudioGuide/android/app/src/main/AndroidManifest.xml:1:1-39:12
+INJECTED from /Users/Jay/Desktop/AudioGuide/android/app/src/main/AndroidManifest.xml:1:1-39:12
+INJECTED from /Users/Jay/Desktop/AudioGuide/android/app/src/main/AndroidManifest.xml:1:1-39:12
 	package
 		ADDED from /Users/Jay/Desktop/AudioGuide/android/app/src/main/AndroidManifest.xml:2:5-22
 		INJECTED from /Users/Jay/Desktop/AudioGuide/android/app/src/main/AndroidManifest.xml
@@ -40,8 +40,8 @@ ADDED from /Users/Jay/Desktop/AudioGuide/android/app/src/main/AndroidManifest.xm
 		ADDED from /Users/Jay/Desktop/AudioGuide/android/app/src/main/AndroidManifest.xml:6:22-64
 uses-permission#android.permission.SYSTEM_ALERT_WINDOW
 ADDED from /Users/Jay/Desktop/AudioGuide/android/app/src/main/AndroidManifest.xml:7:5-77
-MERGED from [com.facebook.react:react-native:0.49.5] /Users/Jay/.gradle/caches/transforms-1/files-1.1/react-native-0.49.5.aar/71f44e977a76aceaa2201f6030b36533/AndroidManifest.xml:11:5-78
-MERGED from [com.facebook.react:react-native:0.49.5] /Users/Jay/.gradle/caches/transforms-1/files-1.1/react-native-0.49.5.aar/71f44e977a76aceaa2201f6030b36533/AndroidManifest.xml:11:5-78
+MERGED from [com.facebook.react:react-native:0.49.5] /Users/Jay/.gradle/caches/transforms-1/files-1.1/react-native-0.49.5.aar/4176933fd9c609b54e57e34e37349e0e/AndroidManifest.xml:11:5-78
+MERGED from [com.facebook.react:react-native:0.49.5] /Users/Jay/.gradle/caches/transforms-1/files-1.1/react-native-0.49.5.aar/4176933fd9c609b54e57e34e37349e0e/AndroidManifest.xml:11:5-78
 	android:name
 		ADDED from /Users/Jay/Desktop/AudioGuide/android/app/src/main/AndroidManifest.xml:7:22-75
 uses-sdk
@@ -50,28 +50,28 @@ INJECTED from /Users/Jay/Desktop/AudioGuide/android/app/src/main/AndroidManifest
 INJECTED from /Users/Jay/Desktop/AudioGuide/android/app/src/main/AndroidManifest.xml:9:5-11:41
 MERGED from [:react-native-sound] /Users/Jay/Desktop/AudioGuide/node_modules/react-native-sound/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:9:5-11:41
 MERGED from [:react-native-sound] /Users/Jay/Desktop/AudioGuide/node_modules/react-native-sound/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:9:5-11:41
-MERGED from [com.facebook.react:react-native:0.49.5] /Users/Jay/.gradle/caches/transforms-1/files-1.1/react-native-0.49.5.aar/71f44e977a76aceaa2201f6030b36533/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.react:react-native:0.49.5] /Users/Jay/.gradle/caches/transforms-1/files-1.1/react-native-0.49.5.aar/71f44e977a76aceaa2201f6030b36533/AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:appcompat-v7:23.0.1] /Users/Jay/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/16a835034a2041c3e9c1a6aea0f2bde9/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:appcompat-v7:23.0.1] /Users/Jay/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/16a835034a2041c3e9c1a6aea0f2bde9/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v4:23.0.1] /Users/Jay/.gradle/caches/transforms-1/files-1.1/support-v4-23.0.1.aar/00d5353be07b38773694ac809430c5ec/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v4:23.0.1] /Users/Jay/.gradle/caches/transforms-1/files-1.1/support-v4-23.0.1.aar/00d5353be07b38773694ac809430c5ec/AndroidManifest.xml:20:5-43
-MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] /Users/Jay/.gradle/caches/transforms-1/files-1.1/textlayoutbuilder-1.0.0.aar/2fecf42cf4630e6ba9573b6dc53770d2/AndroidManifest.xml:14:5-16:41
-MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] /Users/Jay/.gradle/caches/transforms-1/files-1.1/textlayoutbuilder-1.0.0.aar/2fecf42cf4630e6ba9573b6dc53770d2/AndroidManifest.xml:14:5-16:41
-MERGED from [com.facebook.fresco:fresco:1.3.0] /Users/Jay/.gradle/caches/transforms-1/files-1.1/fresco-1.3.0.aar/7e234be632ba8cd0cd402de4d3e8a8db/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:fresco:1.3.0] /Users/Jay/.gradle/caches/transforms-1/files-1.1/fresco-1.3.0.aar/7e234be632ba8cd0cd402de4d3e8a8db/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.3.0] /Users/Jay/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.3.0.aar/26c1ab12022df114634b06ba997722f3/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.3.0] /Users/Jay/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.3.0.aar/26c1ab12022df114634b06ba997722f3/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.soloader:soloader:0.1.0] /Users/Jay/.gradle/caches/transforms-1/files-1.1/soloader-0.1.0.aar/d1318ca23975bb8dcccdccc6096ec98d/AndroidManifest.xml:2:3-70
-MERGED from [com.facebook.soloader:soloader:0.1.0] /Users/Jay/.gradle/caches/transforms-1/files-1.1/soloader-0.1.0.aar/d1318ca23975bb8dcccdccc6096ec98d/AndroidManifest.xml:2:3-70
-MERGED from [com.facebook.fresco:drawee:1.3.0] /Users/Jay/.gradle/caches/transforms-1/files-1.1/drawee-1.3.0.aar/c2ecf586c01c56c1e39ec45d8ff278d9/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:drawee:1.3.0] /Users/Jay/.gradle/caches/transforms-1/files-1.1/drawee-1.3.0.aar/c2ecf586c01c56c1e39ec45d8ff278d9/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline:1.3.0] /Users/Jay/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.3.0.aar/2c7bb3f20c9e5bb290af38e22c2ea7ce/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline:1.3.0] /Users/Jay/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.3.0.aar/2c7bb3f20c9e5bb290af38e22c2ea7ce/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-base:1.3.0] /Users/Jay/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.3.0.aar/4fceb072ee4d37fd6a124802b9ebacb6/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-base:1.3.0] /Users/Jay/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.3.0.aar/4fceb072ee4d37fd6a124802b9ebacb6/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:fbcore:1.3.0] /Users/Jay/.gradle/caches/transforms-1/files-1.1/fbcore-1.3.0.aar/93b83549913bcf163a5c5945c939a9ea/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:fbcore:1.3.0] /Users/Jay/.gradle/caches/transforms-1/files-1.1/fbcore-1.3.0.aar/93b83549913bcf163a5c5945c939a9ea/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.react:react-native:0.49.5] /Users/Jay/.gradle/caches/transforms-1/files-1.1/react-native-0.49.5.aar/4176933fd9c609b54e57e34e37349e0e/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.49.5] /Users/Jay/.gradle/caches/transforms-1/files-1.1/react-native-0.49.5.aar/4176933fd9c609b54e57e34e37349e0e/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:23.0.1] /Users/Jay/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/f4ef0ec65d4e4304e6f6921ff6d1ccdf/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:appcompat-v7:23.0.1] /Users/Jay/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/f4ef0ec65d4e4304e6f6921ff6d1ccdf/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.0.1] /Users/Jay/.gradle/caches/transforms-1/files-1.1/support-v4-23.0.1.aar/16bf970ca27c0334eaa0da231bb1e0bd/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.0.1] /Users/Jay/.gradle/caches/transforms-1/files-1.1/support-v4-23.0.1.aar/16bf970ca27c0334eaa0da231bb1e0bd/AndroidManifest.xml:20:5-43
+MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] /Users/Jay/.gradle/caches/transforms-1/files-1.1/textlayoutbuilder-1.0.0.aar/3d6b892fa86c77cc909209d2dd3ac77e/AndroidManifest.xml:14:5-16:41
+MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] /Users/Jay/.gradle/caches/transforms-1/files-1.1/textlayoutbuilder-1.0.0.aar/3d6b892fa86c77cc909209d2dd3ac77e/AndroidManifest.xml:14:5-16:41
+MERGED from [com.facebook.fresco:fresco:1.3.0] /Users/Jay/.gradle/caches/transforms-1/files-1.1/fresco-1.3.0.aar/1b810d080b1484e9f3e285f2ec73afe2/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fresco:1.3.0] /Users/Jay/.gradle/caches/transforms-1/files-1.1/fresco-1.3.0.aar/1b810d080b1484e9f3e285f2ec73afe2/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.3.0] /Users/Jay/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.3.0.aar/3e02fea305ff0ab9f2d547b43a209696/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.3.0] /Users/Jay/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.3.0.aar/3e02fea305ff0ab9f2d547b43a209696/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.soloader:soloader:0.1.0] /Users/Jay/.gradle/caches/transforms-1/files-1.1/soloader-0.1.0.aar/b7be7ebad94738fb5b91a0092c015816/AndroidManifest.xml:2:3-70
+MERGED from [com.facebook.soloader:soloader:0.1.0] /Users/Jay/.gradle/caches/transforms-1/files-1.1/soloader-0.1.0.aar/b7be7ebad94738fb5b91a0092c015816/AndroidManifest.xml:2:3-70
+MERGED from [com.facebook.fresco:drawee:1.3.0] /Users/Jay/.gradle/caches/transforms-1/files-1.1/drawee-1.3.0.aar/9b43ef5807fe5d712e3684556671bdbd/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:1.3.0] /Users/Jay/.gradle/caches/transforms-1/files-1.1/drawee-1.3.0.aar/9b43ef5807fe5d712e3684556671bdbd/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:1.3.0] /Users/Jay/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.3.0.aar/414a4e3581a3df8d33547c7ccdb060d1/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:1.3.0] /Users/Jay/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.3.0.aar/414a4e3581a3df8d33547c7ccdb060d1/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.3.0] /Users/Jay/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.3.0.aar/aacceb86588ce8bd307dbe17c3647798/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.3.0] /Users/Jay/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.3.0.aar/aacceb86588ce8bd307dbe17c3647798/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:1.3.0] /Users/Jay/.gradle/caches/transforms-1/files-1.1/fbcore-1.3.0.aar/abb37dd265f50c9f35005447d1f09a5b/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:1.3.0] /Users/Jay/.gradle/caches/transforms-1/files-1.1/fbcore-1.3.0.aar/abb37dd265f50c9f35005447d1f09a5b/AndroidManifest.xml:5:5-7:41
 INJECTED from /Users/Jay/Desktop/AudioGuide/android/app/src/main/AndroidManifest.xml:9:5-11:41
 INJECTED from /Users/Jay/Desktop/AudioGuide/android/app/src/main/AndroidManifest.xml:9:5-11:41
 	android:targetSdkVersion
@@ -83,17 +83,17 @@ INJECTED from /Users/Jay/Desktop/AudioGuide/android/app/src/main/AndroidManifest
 		INJECTED from /Users/Jay/Desktop/AudioGuide/android/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/Jay/Desktop/AudioGuide/android/app/src/main/AndroidManifest.xml
 application
-ADDED from /Users/Jay/Desktop/AudioGuide/android/app/src/main/AndroidManifest.xml:13:5-33:19
-MERGED from [com.facebook.react:react-native:0.49.5] /Users/Jay/.gradle/caches/transforms-1/files-1.1/react-native-0.49.5.aar/71f44e977a76aceaa2201f6030b36533/AndroidManifest.xml:13:5-20
-MERGED from [com.facebook.react:react-native:0.49.5] /Users/Jay/.gradle/caches/transforms-1/files-1.1/react-native-0.49.5.aar/71f44e977a76aceaa2201f6030b36533/AndroidManifest.xml:13:5-20
-MERGED from [com.android.support:appcompat-v7:23.0.1] /Users/Jay/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/16a835034a2041c3e9c1a6aea0f2bde9/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:appcompat-v7:23.0.1] /Users/Jay/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/16a835034a2041c3e9c1a6aea0f2bde9/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:23.0.1] /Users/Jay/.gradle/caches/transforms-1/files-1.1/support-v4-23.0.1.aar/00d5353be07b38773694ac809430c5ec/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:23.0.1] /Users/Jay/.gradle/caches/transforms-1/files-1.1/support-v4-23.0.1.aar/00d5353be07b38773694ac809430c5ec/AndroidManifest.xml:22:5-20
-MERGED from [com.facebook.soloader:soloader:0.1.0] /Users/Jay/.gradle/caches/transforms-1/files-1.1/soloader-0.1.0.aar/d1318ca23975bb8dcccdccc6096ec98d/AndroidManifest.xml:3:3-17
-MERGED from [com.facebook.soloader:soloader:0.1.0] /Users/Jay/.gradle/caches/transforms-1/files-1.1/soloader-0.1.0.aar/d1318ca23975bb8dcccdccc6096ec98d/AndroidManifest.xml:3:3-17
-MERGED from [org.webkit:android-jsc:r174650] /Users/Jay/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/26919228e92dc32b5501ffbea55a0bcb/AndroidManifest.xml:2:3-17
-MERGED from [org.webkit:android-jsc:r174650] /Users/Jay/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/26919228e92dc32b5501ffbea55a0bcb/AndroidManifest.xml:2:3-17
+ADDED from /Users/Jay/Desktop/AudioGuide/android/app/src/main/AndroidManifest.xml:13:5-37:19
+MERGED from [com.facebook.react:react-native:0.49.5] /Users/Jay/.gradle/caches/transforms-1/files-1.1/react-native-0.49.5.aar/4176933fd9c609b54e57e34e37349e0e/AndroidManifest.xml:13:5-20
+MERGED from [com.facebook.react:react-native:0.49.5] /Users/Jay/.gradle/caches/transforms-1/files-1.1/react-native-0.49.5.aar/4176933fd9c609b54e57e34e37349e0e/AndroidManifest.xml:13:5-20
+MERGED from [com.android.support:appcompat-v7:23.0.1] /Users/Jay/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/f4ef0ec65d4e4304e6f6921ff6d1ccdf/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:appcompat-v7:23.0.1] /Users/Jay/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/f4ef0ec65d4e4304e6f6921ff6d1ccdf/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.0.1] /Users/Jay/.gradle/caches/transforms-1/files-1.1/support-v4-23.0.1.aar/16bf970ca27c0334eaa0da231bb1e0bd/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.0.1] /Users/Jay/.gradle/caches/transforms-1/files-1.1/support-v4-23.0.1.aar/16bf970ca27c0334eaa0da231bb1e0bd/AndroidManifest.xml:22:5-20
+MERGED from [com.facebook.soloader:soloader:0.1.0] /Users/Jay/.gradle/caches/transforms-1/files-1.1/soloader-0.1.0.aar/b7be7ebad94738fb5b91a0092c015816/AndroidManifest.xml:3:3-17
+MERGED from [com.facebook.soloader:soloader:0.1.0] /Users/Jay/.gradle/caches/transforms-1/files-1.1/soloader-0.1.0.aar/b7be7ebad94738fb5b91a0092c015816/AndroidManifest.xml:3:3-17
+MERGED from [org.webkit:android-jsc:r174650] /Users/Jay/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/09c3eb4fe679ecc2a5d2a37b12dbd07c/AndroidManifest.xml:2:3-17
+MERGED from [org.webkit:android-jsc:r174650] /Users/Jay/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/09c3eb4fe679ecc2a5d2a37b12dbd07c/AndroidManifest.xml:2:3-17
 	android:label
 		ADDED from /Users/Jay/Desktop/AudioGuide/android/app/src/main/AndroidManifest.xml:16:7-39
 	android:icon
@@ -105,7 +105,9 @@ MERGED from [org.webkit:android-jsc:r174650] /Users/Jay/.gradle/caches/transform
 	android:name
 		ADDED from /Users/Jay/Desktop/AudioGuide/android/app/src/main/AndroidManifest.xml:14:7-38
 activity#com.app.SplashActivity
-ADDED from /Users/Jay/Desktop/AudioGuide/android/app/src/main/AndroidManifest.xml:19:7-29:18
+ADDED from /Users/Jay/Desktop/AudioGuide/android/app/src/main/AndroidManifest.xml:19:7-31:18
+	android:screenOrientation
+		ADDED from /Users/Jay/Desktop/AudioGuide/android/app/src/main/AndroidManifest.xml:25:11-47
 	android:label
 		ADDED from /Users/Jay/Desktop/AudioGuide/android/app/src/main/AndroidManifest.xml:21:9-41
 	android:windowSoftInputMode
@@ -117,26 +119,28 @@ ADDED from /Users/Jay/Desktop/AudioGuide/android/app/src/main/AndroidManifest.xm
 	android:name
 		ADDED from /Users/Jay/Desktop/AudioGuide/android/app/src/main/AndroidManifest.xml:20:9-39
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from /Users/Jay/Desktop/AudioGuide/android/app/src/main/AndroidManifest.xml:25:9-28:25
+ADDED from /Users/Jay/Desktop/AudioGuide/android/app/src/main/AndroidManifest.xml:27:9-30:25
 action#android.intent.action.MAIN
-ADDED from /Users/Jay/Desktop/AudioGuide/android/app/src/main/AndroidManifest.xml:26:13-65
+ADDED from /Users/Jay/Desktop/AudioGuide/android/app/src/main/AndroidManifest.xml:28:13-64
 	android:name
-		ADDED from /Users/Jay/Desktop/AudioGuide/android/app/src/main/AndroidManifest.xml:26:21-62
+		ADDED from /Users/Jay/Desktop/AudioGuide/android/app/src/main/AndroidManifest.xml:28:21-62
 category#android.intent.category.LAUNCHER
-ADDED from /Users/Jay/Desktop/AudioGuide/android/app/src/main/AndroidManifest.xml:27:13-73
+ADDED from /Users/Jay/Desktop/AudioGuide/android/app/src/main/AndroidManifest.xml:29:13-73
 	android:name
-		ADDED from /Users/Jay/Desktop/AudioGuide/android/app/src/main/AndroidManifest.xml:27:23-70
+		ADDED from /Users/Jay/Desktop/AudioGuide/android/app/src/main/AndroidManifest.xml:29:23-70
 activity#com.app.MainActivity
-ADDED from /Users/Jay/Desktop/AudioGuide/android/app/src/main/AndroidManifest.xml:31:9-50
+ADDED from /Users/Jay/Desktop/AudioGuide/android/app/src/main/AndroidManifest.xml:33:9-35:50
+	android:screenOrientation
+		ADDED from /Users/Jay/Desktop/AudioGuide/android/app/src/main/AndroidManifest.xml:35:11-47
 	android:name
-		ADDED from /Users/Jay/Desktop/AudioGuide/android/app/src/main/AndroidManifest.xml:31:19-47
+		ADDED from /Users/Jay/Desktop/AudioGuide/android/app/src/main/AndroidManifest.xml:34:11-39
 activity#com.facebook.react.devsupport.DevSettingsActivity
-ADDED from /Users/Jay/Desktop/AudioGuide/android/app/src/main/AndroidManifest.xml:32:7-84
+ADDED from /Users/Jay/Desktop/AudioGuide/android/app/src/main/AndroidManifest.xml:36:7-84
 	android:name
-		ADDED from /Users/Jay/Desktop/AudioGuide/android/app/src/main/AndroidManifest.xml:32:17-81
+		ADDED from /Users/Jay/Desktop/AudioGuide/android/app/src/main/AndroidManifest.xml:36:17-81
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-IMPLIED from /Users/Jay/Desktop/AudioGuide/android/app/src/main/AndroidManifest.xml:1:1-35:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4
+IMPLIED from /Users/Jay/Desktop/AudioGuide/android/app/src/main/AndroidManifest.xml:1:1-39:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4
 uses-permission#android.permission.READ_PHONE_STATE
-IMPLIED from /Users/Jay/Desktop/AudioGuide/android/app/src/main/AndroidManifest.xml:1:1-35:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4
+IMPLIED from /Users/Jay/Desktop/AudioGuide/android/app/src/main/AndroidManifest.xml:1:1-39:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-IMPLIED from /Users/Jay/Desktop/AudioGuide/android/app/src/main/AndroidManifest.xml:1:1-35:12 reason: org.webkit.android_jsc requested WRITE_EXTERNAL_STORAGE
+IMPLIED from /Users/Jay/Desktop/AudioGuide/android/app/src/main/AndroidManifest.xml:1:1-39:12 reason: org.webkit.android_jsc requested WRITE_EXTERNAL_STORAGE
