@@ -4,6 +4,8 @@ import {
   Text,
   TouchableOpacity,
   View,
+  Image,
+  Dimensions,
   ScrollView,
   Alert,
   Button
@@ -19,18 +21,23 @@ export default class PlayOrPause extends React.Component {
 
 
 
-    if(this.props.isPlaying){
+    if(!this.props.isPlaying){
     return (
-      <Text>
-      Pause
-    </Text>);}
+      <Image style={styles.imageStyle} source={require('./img/play.png')}>
+    </Image>);}
 
 else{
   return (
-    <Text>
-    Play
-  </Text>);
+    <Image style={styles.imageStyle} source={require('./img/pause.png')}>
+  </Image>);
   }
 
 }
 }
+
+const styles = StyleSheet.create({
+  imageStyle: {
+    width: Dimensions.get('window').width / 4 ,
+    height: Dimensions.get('window').width / 4
+  }
+});

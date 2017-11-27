@@ -4,3 +4,5 @@ npm-debug.*
 
 \img
 \raw
+\build
+\my-release-key.keystore

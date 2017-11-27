@@ -19,117 +19,180 @@ const zoneOne = [
   {
     title: 'Welcome to BAPS Shri Swaminarayan Mandir',
     url: 'welcome.mp3',
-    image: require('./img/Welcome_to_BAPS_Shri_Swaminarayan_Mandir.jpg')
+    image: require('./img/Welcome_to_BAPS_Shri_Swaminarayan_Mandir.jpg'),
+    number: '1'
   }, {
     title: 'Haveli Atrium',
     url: 'haveli_atrium.mp3',
-    image: require('./img/Haveli_Atrium.jpg')
+    image: require('./img/Haveli_Atrium.jpg'),
+    number: '2'
   }, {
     title: 'Assembly Hall',
-    image: require('./img/Assembly_Hall.jpg')
+    url: 'assembly_hall.mp3',
+    image: require('./img/Assembly_Hall.jpg'),
+    number: '3'
   }, {
     title: "Swamishri's Portrait",
-    image: require('./img/Swamishris_Portrait.jpg')
+    url: 'swamishris_portrait.mp3',
+    image: require('./img/Swamishris_Portrait.jpg'),
+    number: '4'
   }
 ];
 
 const zoneTwo = [
   {
     title: 'Walkway',
-    image: require('./img/Walkway.jpg')
+    url: 'walkway.mp3',
+    image: require('./img/Walkway.jpg'),
+    number: '5'
   }, {
     title: 'Photo Display - Interfaith',
-    image: require('./img/Photo_Display_Interfaith.jpg')
+    url: 'photo_display_interfaith.mp3',
+    image: require('./img/Photo_Display_Interfaith.jpg'),
+    number: '6'
   }, {
     title: 'Photo Display  - Charity Activities',
-    image: require('./img/Photo_Display_Charity_Activities.jpg')
+    url: 'photo_display_charity_activities.mp3',
+    image: require('./img/Photo_Display_Charity_Activities.jpg'),
+    number: '7'
   }
 ];
 
 const zoneThree = [
   {
     title: 'Abhishek Mandap',
-    image: require('./img/Abhishek_Mandap.jpg')
+    url: 'abhishek_mandap.mp3',
+    image: require('./img/Abhishek_Mandap.jpg'),
+    number: '8'
   }, {
     title: 'Upper Sanctum',
-    image: require('./img/Upper_Sanctum.jpg')
-    // image: require('./img/Devotion_Worship.jpg')
+    url: 'upper_sanctum.mp3',
+    image: require('./img/Upper_Sanctum.jpg'),
+    number: '9'
   }, {
     title: 'Bhagwan Swaminarayan',
-    image: require('./img/Bhagwan_Swaminarayan.jpg')
+    url: 'bhagwan_swaminarayan.mp3',
+    image: require('./img/Bhagwan_Swaminarayan.jpg'),
+    number: '10'
   }, {
     title: 'Gunatitanand Swami',
-    image: require('./img/Gunatitanand_Swami.jpg')
+    url: 'gunatitanand_swami.mp3',
+    image: require('./img/Gunatitanand_Swami.jpg'),
+    number: '11'
   }, {
     title: 'Gopalanand Swami',
-    image: require('./img/Gopalanand_Swami.jpg')
+    url: 'gopalanand_swami.mp3',
+    image: require('./img/Gopalanand_Swami.jpg'),
+    number: '12'
   }, {
     title: 'Sukh Shayya',
-    image: require('./img/Sukh_Shayya.jpg')
+    url: 'sukh_shayya.mp3',
+    image: require('./img/Sukh_Shayya.jpg'),
+    number: '13'
   }, {
     title: 'Ghanshyam Maharaj',
-    image: require('./img/Ghanshyam_Maharaj.jpg')
+    url: 'ghanshyam_maharaj.mp3',
+    image: require('./img/Ghanshyam_Maharaj.jpg'),
+    number: '14'
   }, {
     title: 'Guru Parampara',
-    image: require('./img/Guru_Parampara.jpg')
+    url: 'guru_parampara.mp3',
+    image: require('./img/Guru_Parampara.jpg'),
+    number: '15'
   }, {
     title: 'Harikrishna Maharaj & Radha-Krishna',
-    image: require('./img/Harikrishna_Maharaj_&_Radha_Krishna.jpg')
+    url: 'harikrishna_maharaj_radha_krishna.mp3',
+    image: require('./img/Harikrishna_Maharaj_&_Radha_Krishna.jpg'),
+    number: '16'
   }, {
     title: 'Bhagatji Maharaj',
-    image: require('./img/Bhagatji_Maharaj.jpg')
+    url: 'bhagatji_maharaj.mp3',
+    image: require('./img/Bhagatji_Maharaj.jpg'),
+    number: '17'
   }, {
     title: 'Shastriji Maharaj',
-    image: require('./img/Shastriji_Maharaj.jpg')
+    url: 'shastriji_maharaj.mp3',
+    image: require('./img/Shastriji_Maharaj.jpg'),
+    number: '18'
   }, {
     title: 'Yogiji Maharaj',
-    image: require('./img/Yogiji_Maharaj.jpg')
+    url: 'yogiji_maharaj.mp3',
+    image: require('./img/Yogiji_Maharaj.jpg'),
+    number: '19'
   }, {
     title: 'Pramukh Swami Maharaj',
-    image: require('./img/Pramukh_Swami_Maharaj.jpg')
+    url: 'pramukh_swami_maharaj.mp3',
+    image: require('./img/Pramukh_Swami_Maharaj.jpg'),
+    number: '20'
   }, {
     title: 'Shiva-Parvati',
-    image: require('./img/Shiva_Parvati.jpg')
+    url: 'shiva_parvati.mp3',
+    image: require('./img/Shiva_Parvati.jpg'),
+    number: '21'
   }, {
     title: 'Sita-Rama',
-    image: require('./img/Sita_Rama.jpg')
+    url: 'sita_rama.mp3',
+    image: require('./img/Sita_Rama.jpg'),
+    number: '22'
   }, {
     title: 'Ganesh & Shivaling',
-    image: require('./img/Ganesh_&_Shivaling.jpg')
+    url: 'ganesh_shivaling.mp3',
+    image: require('./img/Ganesh_&_Shivaling.jpg'),
+    number: '23'
   }, {
     title: 'Hanuman',
-    image: require('./img/Hanuman.jpg')
+    url: 'hanuman.mp3',
+    image: require('./img/Hanuman.jpg'),
+    number: '24'
   }, {
     title: 'Carved Pillars',
-    image: require('./img/Carved_Pillars.jpg')
+    url: 'carved_pillars.mp3',
+    image: require('./img/Carved_Pillars.jpg'),
+    number: '25'
   }, {
     title: 'Central Dome',
-    image: require('./img/Central_Dome.jpg')
-  }, {
+    url: 'central_dome.mp3',
+    image: require('./img/Central_Dome.jpg'),
+    number: '26',
+    }, {
     title: 'Carved Ceiling',
-    image: require('./img/Carved_Ceiling.jpg')
+    url: 'carved_ceiling.mp3',
+    image: require('./img/Carved_Ceiling.jpg'),
+    number: '27'
   }, {
     title: 'Shiva-Parvati',
-    image: require('./img/Shiva_Parvati.jpg')
+    url: 'shiva_parvati.mp3',
+    image: require('./img/Shiva_Parvati.jpg'),
+    number: '28'
   }, {
     title: 'Devotion & Worship',
-    image: require('./img/Devotion_&_Worship.jpg')
+    url: 'devotion_worship.mp3',
+    image: require('./img/Devotion_&_Worship.jpg'),
+    number: '29'
   }, {
     title: 'Rosewood Doors',
-    image: require('./img/Rosewood_Doors.jpg')
+    url: 'rosewood_doors.mp3',
+    image: require('./img/Rosewood_Doors.jpg'),
+    number: '30'
   }, {
     title: 'Porch',
-    image: require('./img/Porch.jpg')
+    url: 'porch.mp3',
+    image: require('./img/Porch.jpg'),
+    number: '31'
   }
 ];
 
 const zoneFour = [
   {
     title: 'Exhibition',
-    image: require('./img/Exhibition.jpg')
+    url: 'exhibition.mp3',
+    image: require('./img/Exhibition.jpg'),
+    number: '32'
   }, {
     title: 'Thank You & Farewell',
-    image: require('./img/Thank_You_&_Farewell.jpg')
+    url: 'thank_you_farewell.mp3',
+    image: require('./img/Thank_You_&_Farewell.jpg'),
+    number: '33'
   }
 ];
 
@@ -156,15 +219,18 @@ export default class AudioList extends Component {
     const {navigate} = this.props.navigation;
     var test = [];
 
-    function getZoneMap(thisZone) {
+    function getZoneMap(thisZone, zone) {
       for (let i = 0; i < thisZone.length; i++) {
 
         test.push(<TouchableOpacity key={thisZone[i]} style={styles.touchableImage} onPress={() => navigate('AudioPlay', {
+            title: thisZone[i].title,
             url: thisZone[i].url,
-            number: i
+            image: thisZone[i].image,
+            number: thisZone[i].number,
+            zone: zone
           })}>
 
-          <Image source={thisZone[i].image} resizeMode={'cover'} borderRadius={10} style={styles.imageStyle}>
+          <Image source={thisZone[i].image} resizeMode={'cover'} borderRadius={15} style={styles.imageStyle}>
             <View style={styles.textContainer}>
               <Text style={styles.textStyles}>{thisZone[i].title}</Text>
             </View>
@@ -176,17 +242,17 @@ export default class AudioList extends Component {
     let zone = this.props.navigation.state.params.sendZone
 
     if (zone == 'one') {
-      getZoneMap(zoneOne)
+      getZoneMap(zoneOne, 'Zone 1')
     }
     if (zone == 'two') {
-      getZoneMap(zoneTwo)
+      getZoneMap(zoneTwo, 'Zone 2')
     }
 
     if (zone == 'three') {
-      getZoneMap(zoneThree)
+      getZoneMap(zoneThree, 'Zone 3')
     }
     if (zone == 'four') {
-      getZoneMap(zoneFour)
+      getZoneMap(zoneFour, 'Zone 4')
     }
 
     return (<ScrollView style={styles.scrollContainer}>
@@ -199,7 +265,8 @@ export default class AudioList extends Component {
 
 const styles = StyleSheet.create({
   scrollContainer: {
-    flex: 1
+    flex: 1,
+    backgroundColor: 'white'
   },
   container: {
     flex: 1,
@@ -224,7 +291,7 @@ const styles = StyleSheet.create({
         width: windowWidth,
         height: windowWidth,
         backgroundColor: 'rgba(0,0,0,0.5)',
-        borderRadius: 10,
+        borderRadius: 15,
         justifyContent: 'center',
         alignItems: 'center'
       },

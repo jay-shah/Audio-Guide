@@ -4,8 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/App.iml" filepath="$PROJECT_DIR$/App.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-linear-gradient/android/react-native-linear-gradient.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-linear-gradient/android/react-native-linear-gradient.iml" />
       <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-sound/android/react-native-sound.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-sound/android/react-native-sound.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-sound/android/react-native-sound-react-native-sound.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-sound/android/react-native-sound-react-native-sound.iml" />
     </modules>
   </component>
 </project>

@@ -21,6 +21,28 @@
                     }
                 }
             ]
+        },
+        {
+            "outputFile": "/Users/Jay/Desktop/AudioGuide/android/app/build/intermediates/res/merged/debug/values-v18/values-v18.xml",
+            "map": [
+                {
+                    "source": "/Users/Jay/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/f4ef0ec65d4e4304e6f6921ff6d1ccdf/res/values-v18/values-v18.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "4",
+                        "startOffsets": "280",
+                        "endColumns": "48",
+                        "endOffsets": "324"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "48",
+                        "endOffsets": "99"
+                    }
+                }
+            ]
         }
     ]
 }

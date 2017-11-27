@@ -5,9 +5,12 @@ import {
   TouchableOpacity,
   View,
   ScrollView,
+  Dimensions,
+  Image,
   Alert,
   Button
 } from 'react-native';
+import LinearGradient from 'react-native-linear-gradient';
 import {StackNavigator} from 'react-navigation';
 import Sound from 'react-native-sound';
 import PlayOrPause from './playOrPause';
@@ -15,33 +18,7 @@ import PlayOrPause from './playOrPause';
 
 
 
-function playSound(url, component) {
 
-  const callback = (error, sound) => {
-    if (error) {
-      Alert.alert('error', error.message);
-      return;
-    }
-    // Run optional pre-play callback
-
-
-      component.setState({playing: sound});
-
-
-    sound.play(() => {
-      // console.log("GOT HERE" + testInfo);rr
-      // Success counts as getting to the end
-      // Release when it's done so we're not using up resources
-      sound.release();
-      component.setState({playing: null});
-
-    });
-  };
-
-  const sound = new Sound(url, Sound.MAIN_BUNDLE, error => callback(error, sound));
-
-
-}
 
 export default class AudioPlay extends Component {
 
@@ -52,8 +29,10 @@ export default class AudioPlay extends Component {
 
     this.state = {
       playing: undefined,
-      isPlaying: true
+      isPlaying: false
     }
+
+
 
   }
 
@@ -68,6 +47,7 @@ export default class AudioPlay extends Component {
     }
   });
 
+
   componentWillUnmount() {
 
     if (!this.state.playing) {
@@ -75,88 +55,99 @@ export default class AudioPlay extends Component {
     }
 
     this.state.playing.stop().release();
-    this.setState({playing: null});
   }
 
 
 
-  togglePlay = () => {
 
-    this.setState ({
-      isPlaying: !this.state.isPlaying
+  handlePlay = (whoosh) => {
+
+    if(!this.state.playing)
+      {
+
+    whoosh.play((success) => {
+    if (success) {
+      console.log('successfully finished playing');
+    } else {
+      console.log('playback failed due to audio decoding errors');
+      // reset the player to its uninitialized state (android only)
+      // this is the only option to recover after an error occured and use the player again
+      whoosh.release();
+    }
     });
+
+    this.setState({
+      playing: whoosh,
+      isPlaying: true
+    })
   }
 
-  stopPlaying = () => {
 
-    if (!this.state.playing) {
-      return;
+    else if(this.state.playing && !this.state.isPlaying){
+      this.state.playing.play();
+      this.setState({
+        isPlaying: true
+      })
     }
 
-    this.state.playing.stop().release();
-    this.setState({playing: null});
+    else if(this.state.isPlaying){
+      this.state.playing.pause();
+      this.setState({
+        isPlaying: false
+      })
+    }
   }
 
   render() {
 
     const {navigate} = this.props.navigation;
     let url = this.props.navigation.state.params.url
-    console.log(url)
+    let title = this.props.navigation.state.params.title
+    let image = this.props.navigation.state.params.image
+    let zone = this.props.navigation.state.params.zone
+
+    var whoosh = new Sound(url, Sound.MAIN_BUNDLE, (error) => {
+    if (error) {
+      console.log('failed to load the sound', error);
+      return;
+    }
+
+
+
+    // loaded successfully
+    console.log('duration in seconds: ' + whoosh.getDuration() + 'number of channels: ' + whoosh.getNumberOfChannels());
+  });
+
+
 
 
     return (
 
-      <View style={{
-        flex: 1,
-        flexDirection: 'column'
-      }}>
-        <View style={{
-          flex: 3,
-          backgroundColor: 'powderblue',
-          justifyContent: 'center',
-          alignItems: 'center'
-        }}>
-          <Text>IMAGE</Text>
-        </View>
-        <View style={{
-          flex: 1,
-          backgroundColor: 'skyblue',
-          justifyContent: 'center',
-          alignItems: 'center'
-        }}>
-          <Text>Title</Text>
-        </View>
-        <View style={{
-          flex: 1,
-          backgroundColor: 'skyblue',
-          justifyContent: 'center',
-          alignItems: 'center'
-        }}>
-          <Text>Zone</Text>
-        </View>
-        <View style={{
-          flex: 2
-        }}>
+      <View style={styles.container}>
+        <View style={styles.imageContainer}>
 
-          <TouchableOpacity style={{
-            height: 100,
-            width: 100,
-            backgroundColor: 'orange'
-          }} onPress={() => {
-            return playSound(url, this);
-          }}>
+          <Image source={image}  resizeMode={'cover'} style={styles.imageContainer} blurRadius={20} opacity={0.8}>
+            <LinearGradient style={styles.linearGradient} colors={["transparent", "white"]}  start={{x: 0.5, y: 0}} end={{x: 0.5, y: 1}}>
 
+          <Image source={image} resizeMode={'cover'} borderRadius={15} style={styles.imageStyle}></Image>
+</LinearGradient>
+        </Image>
+
+
+        </View>
+        <View style={styles.titleContainer}>
+          <Text style={styles.titleText}>{title}</Text>
+        </View>
+        <View style={styles.titleContainer}>
+          <Text style={styles.zoneText}>{zone}</Text>
+        </View>
+        <View style={{
+          flex: 2,
+          justifyContent: 'center',
+          alignItems: 'center'
+        }}>
+          <TouchableOpacity onPress={() => {this.handlePlay(whoosh)}}>
             <PlayOrPause isPlaying={this.state.isPlaying} />
-
-          </TouchableOpacity>
-          <TouchableOpacity style={{
-            height: 100,
-            width: 100,
-            backgroundColor: 'orange'
-          }} onPress={this.stopPlaying}>
-
-            <Text> STOP </Text>
-
           </TouchableOpacity>
 
         </View>
@@ -166,3 +157,53 @@ export default class AudioPlay extends Component {
 
   }
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    flexDirection: 'column',
+    backgroundColor: 'white'
+  },
+  imageContainer: {
+    flex: 3,
+    justifyContent: 'center',
+    alignItems: 'center',
+    width: Dimensions.get('window').width,
+  },
+  imageStyle: {
+    marginTop: 20,
+    justifyContent: 'center',
+    alignItems: 'center',
+    width: Dimensions.get('window').width / 1.5 ,
+    height: Dimensions.get('window').width / 1.5 - 20
+  },
+  titleContainer: {
+    marginRight: 30,
+    marginLeft: 30,
+    flex: 0.3,
+    justifyContent: 'center',
+    alignItems: 'center'
+  },
+  titleText: {
+    textAlign: 'center',
+    fontSize: 20,
+    color: 'black',
+    fontWeight: 'bold'
+  },
+  zoneText: {
+    textAlign: 'center',
+    fontSize: 15,
+    color: 'black',
+    fontWeight: 'normal'
+  },
+  linearGradient: {
+   flex: 1,
+   width: Dimensions.get('window').width,
+   justifyContent: 'center',
+   alignItems: 'center'
+ }
+
+
+
+
+});
