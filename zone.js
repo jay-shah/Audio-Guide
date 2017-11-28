@@ -20,7 +20,7 @@ export default class Zone extends Component {
 
   }
 
-  BigImage = () => <Image style={styles.mainImage} borderRadius={10} width={Dimensions.get('window').width - 40} resizeMode={'cover'} source={require('./img/mandir.jpg')}/>;
+  BigImage = () => <Image style={styles.mainImage} borderRadius={15} width={Dimensions.get('window').width - 40} resizeMode={'cover'} source={require('./img/mandir.jpg')}/>;
 
   TouchZoneImages = ({zone, title, picture}) => (<TouchableOpacity style={styles.touachableImage} onPress={() => this.onPresButton(zone, title)}>
     <Image style={styles.smallImages} borderRadius={15} resizeMode={'cover'} source={picture}>
@@ -49,7 +49,11 @@ export default class Zone extends Component {
     return (<View style={styles.container}>
 
       <View style={styles.title}>
-        <Text>TITLE</Text>
+
+          <Image style={{flex:1, margin: 10}} resizeMode={'contain'} source={require('./img/titleLeft.png')}></Image>
+
+          <Image style={{flex:5, margin: 10}}  resizeMode={'contain'} source={require('./img/titleRight.png')}></Image>
+
       </View>
       <this.BigImage/>
       <View style={styles.smallImageContainer}>
@@ -77,11 +81,28 @@ const styles = StyleSheet.create({
   },
   title: {
     flex: 1,
-    backgroundColor: 'powderblue',
+    flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
+    // backgroundColor: 'black',
     margin: 10,
     // borderRadius
+  },
+  titleContainer: {
+    // flex: 1,
+    flexDirection: 'row',
+    // backgroundColor: 'black'
+  },
+  titleBoxLeft:{
+    flex: 1,
+
+    margin: 10,
+
+    // backgroundColor: 'blue'
+  },
+  titleBoxRight:{
+    flex: 4,
+    margin: 10
   },
   mainImage: {
     flex: 2,
