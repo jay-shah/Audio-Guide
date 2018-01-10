@@ -74,6 +74,10 @@ export default class AudioPlay extends Component {
       // this is the only option to recover after an error occured and use the player again
       whoosh.release();
     }
+
+    this.setState({
+      isPlaying: false
+    })
     });
 
     this.setState({
@@ -202,8 +206,5 @@ const styles = StyleSheet.create({
    justifyContent: 'center',
    alignItems: 'center'
  }
-
-
-
 
 });
