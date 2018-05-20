@@ -221,20 +221,22 @@ export default class AudioList extends Component {
     function getZoneMap(thisZone, zone) {
       for (let i = 0; i < thisZone.length; i++) {
 
-        test.push(<TouchableOpacity key={thisZone[i]} style={styles.touchableImage} onPress={() => navigate('AudioPlay', {
-          title: thisZone[i].title,
-          url: thisZone[i].url,
-          image: thisZone[i].image,
-          number: thisZone[i].number,
-          zone: zone
-        })}>
+        test.push(
+          <TouchableOpacity key={thisZone[i]} style={styles.touchableImage} onPress={() =>
+            navigate('AudioPlay', {
+              title: thisZone[i].title,
+              url: thisZone[i].url,
+              image: thisZone[i].image,
+              number: thisZone[i].number,
+              zone: zone
+            })}>
 
-          <Image source={thisZone[i].image} resizeMode={'cover'} borderRadius={15} style={styles.imageStyle}>
-            <View style={styles.textContainer}>
-              <Text style={styles.textStyles}>{thisZone[i].title}</Text>
-            </View>
-          </Image>
-        </TouchableOpacity>)
+            <Image source={thisZone[i].image} resizeMode={'cover'} borderRadius={15} style={styles.imageStyle}>
+              <View style={styles.textContainer}>
+                <Text style={styles.textStyles}>{thisZone[i].title}</Text>
+              </View>
+            </Image>
+          </TouchableOpacity>)
       }
     }
 
