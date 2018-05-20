@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import {
   StyleSheet,
   Text,
@@ -11,7 +11,7 @@ import {
   Image
 } from 'react-native';
 import Sound from 'react-native-sound';
-import {StackNavigator} from 'react-navigation';
+import { StackNavigator } from 'react-navigation';
 
 const windowWidth = ((Dimensions.get('window').width) / 2) - 30;
 
@@ -154,7 +154,7 @@ const zoneThree = [
     url: 'central_dome.mp3',
     image: require('./img/Central_Dome.jpg'),
     number: '26',
-    }, {
+  }, {
     title: 'Carved Ceiling',
     url: 'carved_ceiling.mp3',
     image: require('./img/Carved_Ceiling.jpg'),
@@ -203,7 +203,7 @@ export default class AudioList extends Component {
 
   }
 
-  static navigationOptions = ({navigation}) => ({
+  static navigationOptions = ({ navigation }) => ({
     title: navigation.state.params.zoneTitle,
     headerRight: (<View></View>),
     headerTitleStyle: {
@@ -216,19 +216,19 @@ export default class AudioList extends Component {
 
   render() {
 
-    const {navigate} = this.props.navigation;
+    const { navigate } = this.props.navigation;
     var test = [];
 
     function getZoneMap(thisZone, zone) {
       for (let i = 0; i < thisZone.length; i++) {
 
         test.push(<TouchableOpacity key={thisZone[i]} style={styles.touchableImage} onPress={() => navigate('AudioPlay', {
-            title: thisZone[i].title,
-            url: thisZone[i].url,
-            image: thisZone[i].image,
-            number: thisZone[i].number,
-            zone: zone
-          })}>
+          title: thisZone[i].title,
+          url: thisZone[i].url,
+          image: thisZone[i].image,
+          number: thisZone[i].number,
+          zone: zone
+        })}>
 
           <Image source={thisZone[i].image} resizeMode={'cover'} borderRadius={15} style={styles.imageStyle}>
             <View style={styles.textContainer}>
@@ -281,24 +281,24 @@ const styles = StyleSheet.create({
     height: windowWidth
   },
   touchableImage: {
-      width: windowWidth,
-      height: windowWidth,
-      margin: 10,
-      justifyContent: 'center',
-      alignItems: 'center'
-    },
-    textContainer: {
-        width: windowWidth,
-        height: windowWidth,
-        backgroundColor: 'rgba(0,0,0,0.5)',
-        borderRadius: 15,
-        justifyContent: 'center',
-        alignItems: 'center'
-      },
-      textStyles: {
-          textAlign: 'center',
-          fontSize: 15,
-          color: 'white',
-          fontWeight: 'bold'
-        }
+    width: windowWidth,
+    height: windowWidth,
+    margin: 10,
+    justifyContent: 'center',
+    alignItems: 'center'
+  },
+  textContainer: {
+    width: windowWidth,
+    height: windowWidth,
+    backgroundColor: 'rgba(0,0,0,0.5)',
+    borderRadius: 15,
+    justifyContent: 'center',
+    alignItems: 'center'
+  },
+  textStyles: {
+    textAlign: 'center',
+    fontSize: 15,
+    color: 'white',
+    fontWeight: 'bold'
+  }
 });
