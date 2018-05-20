@@ -18,181 +18,180 @@ const windowWidth = ((Dimensions.get('window').width) / 2) - 30;
 const zoneOne = [
   {
     title: 'Welcome to BAPS Shri Swaminarayan Mandir',
-    url: 'welcome.mp3',
+    url: 'bapsag_pos1_informationdesk.mp3',
     image: require('./img/Welcome_to_BAPS_Shri_Swaminarayan_Mandir.jpg'),
     number: '1'
   }, {
     title: 'Haveli Atrium',
-    url: 'haveli_atrium.mp3',
+    url: 'bapsag_pos2_haveliatrium',
     image: require('./img/Haveli_Atrium.jpg'),
     number: '2'
   }, {
     title: 'Assembly Hall',
-    url: 'assembly_hall.mp3',
+    url: 'bapsag_pos3_assemblyhall.mp3',
     image: require('./img/Assembly_Hall.jpg'),
     number: '3'
   }, {
     title: "Swamishri's Portrait",
-    url: 'swamishris_portrait.mp3',
+    url: 'bapsag_pos4_swamishrisportrait.mp3',
     image: require('./img/Swamishris_Portrait.jpg'),
     number: '4'
   }
 ];
 
+
+
 const zoneTwo = [
   {
     title: 'Walkway',
-    url: 'walkway.mp3',
+    url: 'bapsag_pos5_bluecarpet.mp3',
     image: require('./img/Walkway.jpg'),
     number: '5'
   }, {
     title: 'Photo Display - Interfaith',
-    url: 'photo_display_interfaith.mp3',
+    url: 'bapsag_pos6_photodisplay1.mp3',
     image: require('./img/Photo_Display_Interfaith.jpg'),
     number: '6'
   }, {
     title: 'Photo Display  - Charity Activities',
-    url: 'photo_display_charity_activities.mp3',
+    url: 'bapsag_pos7_photodisplay2.mp3',
     image: require('./img/Photo_Display_Charity_Activities.jpg'),
     number: '7'
   }
 ];
 
+
+
 const zoneThree = [
   {
     title: 'Abhishek Mandap',
-    url: 'abhishek_mandap.mp3',
+    url: 'bapsag_pos8_abhishekmandap.mp3',
     image: require('./img/Abhishek_Mandap.jpg'),
     number: '8'
   }, {
     title: 'Upper Sanctum',
-    url: 'upper_sanctum.mp3',
+    url: 'bapsag_pos9_uppersanctum.mp3',
     image: require('./img/Upper_Sanctum.jpg'),
     number: '9'
   }, {
-    title: 'Bhagwan Swaminarayan',
-    url: 'bhagwan_swaminarayan.mp3',
-    image: require('./img/Bhagwan_Swaminarayan.jpg'),
+    title: 'Carved Pillars',
+    url: 'bapsag_pos10_infrontofcarvedpillars.mp3',
+    image: require('./img/Carved_Pillars.jpg'),
     number: '10'
   }, {
-    title: 'Gunatitanand Swami',
-    url: 'gunatitanand_swami.mp3',
-    image: require('./img/Gunatitanand_Swami.jpg'),
-    number: '11'
-  }, {
-    title: 'Gopalanand Swami',
-    url: 'gopalanand_swami.mp3',
-    image: require('./img/Gopalanand_Swami.jpg'),
-    number: '12'
-  }, {
-    title: 'Sukh Shayya',
-    url: 'sukh_shayya.mp3',
-    image: require('./img/Sukh_Shayya.jpg'),
-    number: '13'
-  }, {
-    title: 'Ghanshyam Maharaj',
-    url: 'ghanshyam_maharaj.mp3',
-    image: require('./img/Ghanshyam_Maharaj.jpg'),
-    number: '14'
-  }, {
-    title: 'Guru Parampara',
-    url: 'guru_parampara.mp3',
-    image: require('./img/Guru_Parampara.jpg'),
-    number: '15'
-  }, {
-    title: 'Harikrishna Maharaj & Radha-Krishna',
-    url: 'harikrishna_maharaj_radha_krishna.mp3',
-    image: require('./img/Harikrishna_Maharaj_&_Radha_Krishna.jpg'),
-    number: '16'
-  }, {
-    title: 'Bhagatji Maharaj',
-    url: 'bhagatji_maharaj.mp3',
-    image: require('./img/Bhagatji_Maharaj.jpg'),
-    number: '17'
-  }, {
-    title: 'Shastriji Maharaj',
-    url: 'shastriji_maharaj.mp3',
-    image: require('./img/Shastriji_Maharaj.jpg'),
-    number: '18'
-  }, {
-    title: 'Yogiji Maharaj',
-    url: 'yogiji_maharaj.mp3',
-    image: require('./img/Yogiji_Maharaj.jpg'),
-    number: '19'
-  }, {
-    title: 'Pramukh Swami Maharaj',
-    url: 'pramukh_swami_maharaj.mp3',
-    image: require('./img/Pramukh_Swami_Maharaj.jpg'),
-    number: '20'
-  }, {
-    title: 'Shiva-Parvati',
-    url: 'shiva_parvati.mp3',
-    image: require('./img/Shiva_Parvati.jpg'),
-    number: '21'
-  }, {
-    title: 'Sita-Rama',
-    url: 'sita_rama.mp3',
-    image: require('./img/Sita_Rama.jpg'),
-    number: '22'
-  }, {
-    title: 'Ganesh & Shivaling',
-    url: 'ganesh_shivaling.mp3',
-    image: require('./img/Ganesh_&_Shivaling.jpg'),
-    number: '23'
-  }, {
-    title: 'Hanuman',
-    url: 'hanuman.mp3',
-    image: require('./img/Hanuman.jpg'),
-    number: '24'
-  }, {
-    title: 'Carved Pillars',
-    url: 'carved_pillars.mp3',
-    image: require('./img/Carved_Pillars.jpg'),
-    number: '25'
-  }, {
     title: 'Central Dome',
-    url: 'central_dome.mp3',
+    url: 'bapsag_pos11_centraldome.mp3',
     image: require('./img/Central_Dome.jpg'),
-    number: '26',
-  }, {
-    title: 'Carved Ceiling',
-    url: 'carved_ceiling.mp3',
-    image: require('./img/Carved_Ceiling.jpg'),
-    number: '27'
-  }, {
-    title: 'Shiva-Parvati',
-    url: 'shiva_parvati.mp3',
-    image: require('./img/Shiva_Parvati.jpg'),
-    number: '28'
+    number: '11',
   }, {
     title: 'Devotion & Worship',
-    url: 'devotion_worship.mp3',
+    url: 'bapsag_pos12_devotion.mp3',
     image: require('./img/Devotion_&_Worship.jpg'),
-    number: '29'
+    number: '12'
+  }, {
+    title: 'Bhagwan Swaminarayan',
+    url: 'bapsag_pos13_bhagwanswaminarayan.mp3',
+    image: require('./img/Bhagwan_Swaminarayan.jpg'),
+    number: '13'
+  }, {
+    title: 'Gunatitanand Swami',
+    url: 'bapsag_pos14_gunatitanandswami.mp3',
+    image: require('./img/Gunatitanand_Swami.jpg'),
+    number: '14'
+  }, {
+    title: 'Gopalanand Swami',
+    url: 'bapsag_pos15_gopalanandswami.mp3',
+    image: require('./img/Gopalanand_Swami.jpg'),
+    number: '15'
+  }, {
+    title: 'Ghanshyam Maharaj',
+    url: 'bapsag_pos16_ghanshyammaharaj.mp3',
+    image: require('./img/Ghanshyam_Maharaj.jpg'),
+    number: '16'
+  }, {
+    title: 'Sukh Shayya',
+    url: 'bapsag_pos17_sukhshayya.mp3',
+    image: require('./img/Sukh_Shayya.jpg'),
+    number: '17'
+  }, {
+    title: 'Guru Parampara',
+    url: 'bapsag_pos18_guruparampara.mp3',
+    image: require('./img/Guru_Parampara.jpg'),
+    number: '18'
+  }, {
+    title: 'Harikrishna Maharaj & Radha-Krishna',
+    url: 'bapsag_pos19_harikrishnamaharaj_radhakrishna.mp3',
+    image: require('./img/Harikrishna_Maharaj_&_Radha_Krishna.jpg'),
+    number: '19'
+  }, {
+    title: 'Bhagatji Maharaj',
+    url: 'bapsag_pos20_bhagatjimaharaj.mp3',
+    image: require('./img/Bhagatji_Maharaj.jpg'),
+    number: '20'
+  }, {
+    title: 'Shastriji Maharaj',
+    url: 'bapsag_pos21_shastrijimaharaj.mp3',
+    image: require('./img/Shastriji_Maharaj.jpg'),
+    number: '21'
+  }, {
+    title: 'Yogiji Maharaj',
+    url: 'bapsag_pos22_yogijimaharaj.mp3',
+    image: require('./img/Yogiji_Maharaj.jpg'),
+    number: '22'
+  }, {
+    title: 'Pramukh Swami Maharaj',
+    url: 'bapsag_pos23_pramukhswamimaharaj.mp3',
+    image: require('./img/Pramukh_Swami_Maharaj.jpg'),
+    number: '23'
+  }, {
+    title: 'Shiva-Parvati',
+    url: 'bapsag_pos24_shiva_parvati.mp3',
+    image: require('./img/Shiva_Parvati.jpg'),
+    number: '24'
+  }, {
+    title: 'Hanuman',
+    url: 'bapsag_pos25_hanuman.mp3',
+    image: require('./img/Hanuman.jpg'),
+    number: '25'
+  }, {
+    title: 'Ganesh & Shivaling',
+    url: 'bapsag_pos26_ganesh.mp3',
+    image: require('./img/Ganesh_&_Shivaling.jpg'),
+    number: '26',
+  }, {
+    title: 'Sita-Rama',
+    url: 'bapsag_pos27_sita_ram.mp3',
+    image: require('./img/Sita_Rama.jpg'),
+    number: '27'
+  }, {
+    title: 'Carved Ceiling',
+    url: 'bapsag_pos28_ceiling.mp3',
+    image: require('./img/Carved_Ceiling.jpg'),
+    number: '28'
   }, {
     title: 'Rosewood Doors',
-    url: 'rosewood_doors.mp3',
+    url: 'bapsag_pos29_doors.mp3',
     image: require('./img/Rosewood_Doors.jpg'),
-    number: '30'
+    number: '29'
   }, {
     title: 'Porch',
-    url: 'porch.mp3',
+    url: 'bapsag_pos30_porch.mp3',
     image: require('./img/Porch.jpg'),
-    number: '31'
+    number: '30'
   }
 ];
 
 const zoneFour = [
   {
     title: 'Exhibition',
-    url: 'exhibition.mp3',
+    url: 'bapsag_pos31_exhibition.mp3',
     image: require('./img/Exhibition.jpg'),
-    number: '32'
+    number: '31'
   }, {
     title: 'Thank You & Farewell',
-    url: 'thank_you_farewell.mp3',
+    url: 'bapsag_pos32_messagefromhhpramukhswamimaharaj.mp3',
     image: require('./img/Thank_You_&_Farewell.jpg'),
-    number: '33'
+    number: '32'
   }
 ];
 
