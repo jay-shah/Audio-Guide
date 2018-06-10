@@ -57,15 +57,21 @@ export default class AudioPlay extends Component {
     }
   }
 
-  handlePause = () => {
-    console.log('got here')
-    this.state.whoosh.pause()
+  nextButton = () => {
+    this.props.navigation.goBack();
+    this.props.navigation.state.params.nextButton()
+
+  }
+
+  previousButton = () => {
+    this.props.navigation.goBack();
+    this.props.navigation.state.params.previousButton()
+
   }
 
   handleAudio = () => {
 
     if (this.state.whoosh && !this.state.playing) {
-      console.log(this.state.playing)
 
       this.state.whoosh.play((success) => {
         if (success) {
@@ -86,6 +92,7 @@ export default class AudioPlay extends Component {
     }
 
     else if (this.state.playing) {
+      console.log(this.props.navigation.state.params.handleCheck);
       this.state.whoosh.pause();
       this.setState({
         playing: false
@@ -96,6 +103,7 @@ export default class AudioPlay extends Component {
   render() {
 
     const { navigate } = this.props.navigation;
+    const { params } = this.props.navigation.state;
     let url = this.props.navigation.state.params.url
     let title = this.props.navigation.state.params.title
     let image = this.props.navigation.state.params.image
@@ -123,17 +131,27 @@ export default class AudioPlay extends Component {
         </View>
         <View style={{
           flex: 2,
+          flexWrap: 'wrap',
           justifyContent: 'center',
+          flexDirection: 'row',
           alignItems: 'center'
         }}>
 
+          <TouchableOpacity onPress={this.previousButton} >
+            <Image style={styles.previousStyle} source={require('./img/previous.png')}>
+            </Image>
+          </TouchableOpacity>
           <TouchableOpacity onPress={this.handleAudio}>
             <PlayOrPause playing={this.state.playing} />
           </TouchableOpacity>
-
-
+          <TouchableOpacity onPress={this.nextButton} >
+            <Image style={styles.previousStyle} source={require('./img/next.png')}>
+            </Image>
+          </TouchableOpacity>
         </View>
-      </View>
+
+
+      </View >
 
     );
 
@@ -145,6 +163,11 @@ const styles = StyleSheet.create({
     flex: 1,
     flexDirection: 'column',
     backgroundColor: 'white'
+  },
+  previousStyle: {
+    margin: 10,
+    width: Dimensions.get('window').width / 6,
+    height: Dimensions.get('window').width / 6
   },
   imageContainer: {
     flex: 3,

@@ -10,6 +10,7 @@ import {
   Dimensions,
   Image
 } from 'react-native';
+
 import Sound from 'react-native-sound';
 import { StackNavigator } from 'react-navigation';
 
@@ -194,11 +195,45 @@ const zoneFour = [
     number: '32'
   }
 ];
-
 export default class AudioList extends Component {
 
   constructor(props) {
     super(props)
+
+    this.state = {
+      zone: zoneOne
+    }
+
+  }
+
+  componentDidMount() {
+
+    let zone = this.props.navigation.state.params.sendZone
+    let zoneState = null;
+    let zoneNumber = null;
+
+    if (zone == 'one') {
+      zoneState = zoneOne;
+      zoneNumber = 'Zone 1'
+    }
+    if (zone == 'two') {
+      zoneState = zoneTwo;
+      zoneNumber = 'Zone 2'
+    }
+
+    if (zone == 'three') {
+      zoneState = zoneThree;
+      zoneNumber = 'Zone 3'
+    }
+    if (zone == 'four') {
+      zoneState = zoneFour;
+      zoneNumber = 'Zone 4'
+    }
+
+    this.setState({
+      zone: zoneState,
+      zoneNumber: zoneNumber
+    })
 
   }
 
@@ -211,56 +246,98 @@ export default class AudioList extends Component {
     }
   });
 
+  handleNextButton = () => {
+
+    const { zone, zoneNumber, id } = this.state;
+    if (id < zone.length - 1) {
+
+
+      this.props.navigation.navigate('AudioPlay', {
+        previousButton: this.handlePreviousButton,
+        nextButton: this.handleNextButton,
+        key: zone[id + 1],
+        title: zone[id + 1].title,
+        url: zone[id + 1].url,
+        image: zone[id + 1].image,
+        number: zone[id + 1].number,
+        zone: zoneNumber
+      })
+      this.setState({
+        id: id + 1
+      })
+
+    }
+  }
+
+  handlePreviousButton = () => {
+
+    const { zone, zoneNumber, id } = this.state;
+
+    if (id != 0) {
+
+      this.props.navigation.navigate('AudioPlay', {
+        previousButton: this.handlePreviousButton,
+        nextButton: this.handleNextButton,
+        key: zone[id - 1],
+        title: zone[id - 1].title,
+        url: zone[id - 1].url,
+        image: zone[id - 1].image,
+        number: zone[id - 1].number,
+        zone: zoneNumber
+      })
+      this.setState({
+        id: id - 1
+      })
+
+    }
+  }
+
+  navigatePlay = (item, key) => {
+    this.setState({
+      id: key
+    })
+    this.props.navigation.navigate('AudioPlay', {
+      previousButton: this.handlePreviousButton,
+      nextButton: this.handleNextButton,
+      key: key,
+      title: item.title,
+      url: item.url,
+      image: item.image,
+      number: item.number,
+      zone: this.state.zoneNumber
+    })
+  }
+
+
   // static navigationOptions = { header: null};
 
   render() {
 
-    const { navigate } = this.props.navigation;
+
     var test = [];
 
-    function getZoneMap(thisZone, zone) {
-      for (let i = 0; i < thisZone.length; i++) {
+    const { zone, zoneNumber } = this.state;
 
-        test.push(
-          <TouchableOpacity key={thisZone[i]} style={styles.touchableImage} onPress={() =>
-            navigate('AudioPlay', {
-              title: thisZone[i].title,
-              url: thisZone[i].url,
-              image: thisZone[i].image,
-              number: thisZone[i].number,
-              zone: zone
-            })}>
+    return (<ScrollView style={styles.scrollContainer}  >
+      <View style={styles.container} returnData={this.returnData}  >
+        {/* {test} */}
 
-            <Image source={thisZone[i].image} resizeMode={'cover'} borderRadius={15} style={styles.imageStyle}>
+        {zone.map((item, key) => (
+          < TouchableOpacity key={key} style={styles.touchableImage} onPress={() => {
+            this.navigatePlay(item, key)
+          }}>
+
+            <Image source={item.image} resizeMode={'cover'} borderRadius={15} style={styles.imageStyle}>
               <View style={styles.textContainer}>
-                <Text style={styles.textStyles}>{thisZone[i].title}</Text>
+                <Text style={styles.textStyles}>{item.title}</Text>
               </View>
             </Image>
-          </TouchableOpacity>)
-      }
-    }
-
-    let zone = this.props.navigation.state.params.sendZone
-
-    if (zone == 'one') {
-      getZoneMap(zoneOne, 'Zone 1')
-    }
-    if (zone == 'two') {
-      getZoneMap(zoneTwo, 'Zone 2')
-    }
-
-    if (zone == 'three') {
-      getZoneMap(zoneThree, 'Zone 3')
-    }
-    if (zone == 'four') {
-      getZoneMap(zoneFour, 'Zone 4')
-    }
-
-    return (<ScrollView style={styles.scrollContainer}>
-      <View style={styles.container}>
-        {test}
+          </TouchableOpacity>
+        ))}
       </View>
-    </ScrollView>);
+    </ScrollView >);
+
+
   }
 }
 
