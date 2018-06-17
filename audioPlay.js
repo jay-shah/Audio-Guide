@@ -41,11 +41,11 @@ export default class AudioPlay extends Component {
   }
 
   static navigationOptions = ({ navigation }) => ({
-    title: navigation.state.params.number,
-
+    title: 'Position: ' + navigation.state.params.number,
+    headerRight: (<View></View>),
     headerTitleStyle: {
       textAlign: 'center',
-      alignSelf: 'center'
+      flex: 1
     }
   });
 
@@ -69,14 +69,36 @@ export default class AudioPlay extends Component {
 
   }
 
+
+  tick = () => {
+    this.state.whoosh.getCurrentTime((seconds) => {
+      if (this.tickInterval) {
+        this.setState({
+          currentTime: seconds,
+        });
+      }
+    });
+  }
+
+
+
   handleAudio = () => {
 
     if (this.state.whoosh && !this.state.playing) {
-
+      this.tickInterval = setInterval(() => { this.tick(); }, 250);
       this.state.whoosh.play((success) => {
+
         if (success) {
           console.log('successfully finished playing');
+          if (this.tickInterval) {
+            clearInterval(this.tickInterval);
+            this.tickInterval = null;
+          }
         } else {
+          if (this.tickInterval) {
+            clearInterval(this.tickInterval);
+            this.tickInterval = null;
+          }
           console.log('playback failed due to audio decoding errors');
           this.state.whoosh.release();
         }
@@ -137,6 +159,9 @@ export default class AudioPlay extends Component {
           alignItems: 'center'
         }}>
 
+          {/* <View> */}
+          {/* <Text>{this.state.currentTime} </Text> */}
+          {/* </View> */}
           <TouchableOpacity onPress={this.previousButton} >
             <Image style={styles.previousStyle} source={require('./img/previous.png')}>
             </Image>
