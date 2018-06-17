@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import {
   StyleSheet,
   Text,
@@ -10,32 +10,70 @@ import {
   Dimensions,
   Button
 } from 'react-native';
-import {StackNavigator} from 'react-navigation';
+import { StackNavigator } from 'react-navigation';
 import AudioList from './audioList'
 
 export default class Zone extends Component {
 
   constructor(props) {
     super(props)
+  }
+
+  nextZone = (zone) => {
+    const { navigate } = this.props.navigation;
+    let sendZone = ''
+    let zoneTitle = ''
+
+    if (zone != 'Zone 4') {
+
+      switch (zone) {
+        case 'Zone 1':
+          sendZone = 'two';
+          zoneTitle = 'Zone 2';
+          break;
+
+        case 'Zone 2':
+          sendZone = 'three';
+          zoneTitle = 'Zone 3';
+          break;
+
+        case 'Zone 3':
+          sendZone = 'four';
+          zoneTitle = 'Zone 4';
+          break;
+      }
+
+      navigate('AudioList', {
+        sendZone: sendZone,
+        zoneTitle: zoneTitle,
+        nextZone: this.nextZone
+      });
+
+    }
 
   }
 
-  BigImage = () => <Image style={styles.mainImage} borderRadius={15} width={Dimensions.get('window').width - 40} resizeMode={'cover'} source={require('./img/mandir.jpg')}/>;
 
-  TouchZoneImages = ({zone, title, picture}) => (<TouchableOpacity style={styles.touachableImage} onPress={() => this.onPresButton(zone, title)}>
-    <Image style={styles.smallImages} borderRadius={15} resizeMode={'cover'} source={picture}>
-      <View style={styles.textContainer}>
-        <Text style={styles.textStyle}>{title}
-        </Text>
-      </View>
-    </Image>
-  </TouchableOpacity>);
+
+
+
+  TouchZoneImages = (zone, title, picture) => {
+    return (<TouchableOpacity style={styles.touachableImage} onPress={() => this.onPresButton(zone, title)}>
+      <Image style={styles.smallImages} borderRadius={15} resizeMode={'cover'} source={picture}>
+        <View style={styles.textContainer}>
+          <Text style={styles.textStyle}>{title}
+          </Text>
+        </View>
+      </Image>
+    </TouchableOpacity>)
+  };
 
   onPresButton = (zone, title) => {
-    const {navigate} = this.props.navigation;
+    const { navigate } = this.props.navigation;
     navigate('AudioList', {
       sendZone: zone,
-      zoneTitle: title
+      zoneTitle: title,
+      nextZone: this.nextZone
     });
 
   }
@@ -50,20 +88,24 @@ export default class Zone extends Component {
 
       <View style={styles.title}>
 
-          <Image style={{flex:1, margin: 10}} resizeMode={'contain'} source={require('./img/titleLeft.png')}></Image>
+        <Image style={{ flex: 1, margin: 10 }} resizeMode={'contain'} source={require('./img/titleLeft.png')}></Image>
 
-          <Image style={{flex:5, margin: 10}}  resizeMode={'contain'} source={require('./img/titleRight.png')}></Image>
+        <Image style={{ flex: 5, margin: 10 }} resizeMode={'contain'} source={require('./img/titleRight.png')}></Image>
 
       </View>
-      <this.BigImage/>
+      <Image style={styles.mainImage}
+        borderRadius={15}
+        width={Dimensions.get('window').width - 40}
+        resizeMode={'cover'}
+        source={require('./img/mandir.jpg')} />
       <View style={styles.smallImageContainer}>
         <View style={styles.smallImageRow}>
-          <this.TouchZoneImages zone={'one'} title={"Zone 1"} picture={require('./img/Haveli_Atrium.jpg')}/>
-          <this.TouchZoneImages zone={'two'} title={"Zone 2"} picture={require('./img/Walkway.jpg')}/>
+          {this.TouchZoneImages('one', 'Zone 1', require('./img/Haveli_Atrium.jpg'))}
+          {this.TouchZoneImages('two', 'Zone 2', require('./img/Walkway.jpg'))}
         </View>
         <View style={styles.smallImageRow}>
-          <this.TouchZoneImages zone={'three'} title={"Zone 3"} picture={require('./img/Upper_Sanctum.jpg')}/>
-          <this.TouchZoneImages zone={'four'} title={"Zone 4"} picture={require('./img/Thank_You_&_Farewell.jpg')}/>
+          {this.TouchZoneImages('three', 'Zone 3', require('./img/Upper_Sanctum.jpg'))}
+          {this.TouchZoneImages('four', 'Zone 4', require('./img/Thank_You_&_Farewell.jpg'))}
         </View>
 
       </View>
@@ -93,14 +135,14 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     // backgroundColor: 'black'
   },
-  titleBoxLeft:{
+  titleBoxLeft: {
     flex: 1,
 
     margin: 10,
 
     // backgroundColor: 'blue'
   },
-  titleBoxRight:{
+  titleBoxRight: {
     flex: 4,
     margin: 10
   },
@@ -116,9 +158,9 @@ const styles = StyleSheet.create({
     alignItems: 'center'
   },
   smallImageRow: {
-      flex: 1,
-      flexDirection: 'row'
-    },
+    flex: 1,
+    flexDirection: 'row'
+  },
   touachableImage: {
     flex: 1,
     width: Dimensions.get('window').width / 2 - 30,
