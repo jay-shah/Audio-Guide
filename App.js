@@ -5,47 +5,15 @@ import Zone from './zone';
 import AudioList from './audioList';
 import AudioPlay from './audioPlay';
 
-
 const NavigationLayout = StackNavigator({
-  Zone: { screen: Zone, nagivationOptions: { header: null} },
-  AudioList: {screen: AudioList, nagivationOptions: { title: 'hello',  headerRight: (
-      <View></View>
-    ),
-    headerTitleStyle: {
-      textAlign: 'center',
-      alignSelf: 'center'
-    }}},
-  AudioPlay: {screen: AudioPlay, nagivationOptions: { title: 'hello',  headerRight: (
-      <View></View>
-    ),
-    headerTitleStyle: {
-      textAlign: 'center',
-      alignSelf: 'center'
-    }} }
+  Zone: { screen: Zone, nagivationOptions: { header: null } },
+  AudioList: { screen: AudioList },
+  AudioPlay: { screen: AudioPlay }
 });
-
-
 
 export default class App extends React.Component {
   render() {
-    return (
-      // <View style={styles.container}>
-      //   <Text>Try again</Text>
-      //
-      // </View>
-
-
-      <NavigationLayout />
-
-    );
+    return (<NavigationLayout />);
   }
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
