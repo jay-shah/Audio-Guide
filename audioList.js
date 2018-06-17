@@ -242,7 +242,7 @@ export default class AudioList extends Component {
     headerRight: (<View></View>),
     headerTitleStyle: {
       textAlign: 'center',
-      alignSelf: 'center'
+      flex: 1
     }
   });
 
@@ -267,6 +267,11 @@ export default class AudioList extends Component {
       })
 
     }
+    else {
+      this.props.navigation.goBack();
+      this.props.navigation.state.params.nextZone(zoneNumber)
+    }
+
   }
 
   handlePreviousButton = () => {
