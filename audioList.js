@@ -33,7 +33,7 @@ const zoneOne = [
     image: require('./img/Assembly_Hall.jpg'),
     number: '3'
   }, {
-    title: "Swamishri's Portrait",
+    title: "Creator & Inspirer",
     url: 'bapsag_pos4_swamishrisportrait.mp3',
     image: require('./img/Swamishris_Portrait.jpg'),
     number: '4'
@@ -56,7 +56,7 @@ const zoneTwo = [
   }, {
     title: 'Photo Display  - Charity Activities',
     url: 'bapsag_pos7_photodisplay2.mp3',
-    image: require('./img/Photo_Display_Charity_Activities.jpg'),
+    image: require('./img/Photo_Display_Interfaith.jpg'),
     number: '7'
   }
 ];

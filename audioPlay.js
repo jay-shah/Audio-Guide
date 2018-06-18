@@ -14,6 +14,7 @@ import LinearGradient from 'react-native-linear-gradient';
 import { StackNavigator } from 'react-navigation';
 import Sound from 'react-native-sound';
 import PlayOrPause from './playOrPause';
+import Slider from 'react-native-slider'
 
 
 
@@ -30,14 +31,31 @@ export default class AudioPlay extends Component {
         console.log('failed to load the sound', error);
         return;
       }
+      let durationSeconds = ~~(this.state.whoosh.getDuration())
+      var mins = ~~((durationSeconds % 3600) / 60);
+      var secs = durationSeconds % 60;
+      let duration = mins + ":" + (secs < 10 ? "0" : "") + parseInt(secs);
+
+      this.setState({
+        duration: duration,
+        durationSeconds: durationSeconds
+      })
       // loaded successfully
       console.log('duration in seconds: ' + whoosh.getDuration() + 'number of channels: ' + whoosh.getNumberOfChannels());
     });
 
     this.state = {
       whoosh: whoosh,
-      playing: false
+      playing: false,
+      currentTime: '0:00',
+      duration: '0:00',
+      durationSeconds: 1000,
+      sliding: false,
+      value: 0
     }
+
+
+
   }
 
   static navigationOptions = ({ navigation }) => ({
@@ -48,6 +66,7 @@ export default class AudioPlay extends Component {
       flex: 1
     }
   });
+
 
 
   componentWillUnmount() {
@@ -71,13 +90,25 @@ export default class AudioPlay extends Component {
 
 
   tick = () => {
-    this.state.whoosh.getCurrentTime((seconds) => {
-      if (this.tickInterval) {
-        this.setState({
-          currentTime: seconds,
-        });
-      }
-    });
+
+    if (!this.state.sliding) {
+
+      this.state.whoosh.getCurrentTime((currentTime) => {
+
+        var mins = ~~((currentTime % 3600) / 60);
+        var secs = currentTime % 60;
+
+        let time = mins + ":" + (secs < 10 ? "0" : "") + Math.ceil(secs);
+        let value = currentTime / this.state.durationSeconds
+
+        if (this.tickInterval) {
+          this.setState({
+            currentTime: time,
+            value: value
+          });
+        }
+      });
+    }
   }
 
 
@@ -85,7 +116,11 @@ export default class AudioPlay extends Component {
   handleAudio = () => {
 
     if (this.state.whoosh && !this.state.playing) {
-      this.tickInterval = setInterval(() => { this.tick(); }, 250);
+
+      console.log(this.state.whoosh.getDuration())
+
+
+      this.tickInterval = setInterval(() => { this.tick(); }, 500);
       this.state.whoosh.play((success) => {
 
         if (success) {
@@ -108,6 +143,7 @@ export default class AudioPlay extends Component {
         })
       });
 
+
       this.setState({
         playing: true
       })
@@ -120,6 +156,17 @@ export default class AudioPlay extends Component {
         playing: false
       })
     }
+  }
+
+  handleValueChange = (value) => {
+
+    let setTime = ~~(value * this.state.durationSeconds)
+    this.state.whoosh.setCurrentTime(setTime)
+
+
+    this.setState({
+      value: value
+    })
   }
 
   render() {
@@ -147,9 +194,41 @@ export default class AudioPlay extends Component {
         </View>
         <View style={styles.titleContainer}>
           <Text style={styles.titleText}>{title}</Text>
-        </View>
-        <View style={styles.titleContainer}>
+
           <Text style={styles.zoneText}>{zone}</Text>
+        </View>
+
+
+        <View style={{
+          flex: 0.5,
+          marginLeft: 30,
+          marginRight: 30,
+          alignItems: "stretch",
+          justifyContent: "center"
+        }}>
+
+          <View style={{ marginBottom: 20, flexDirection: 'row' }} >
+
+            <Text style={{ position: 'absolute', left: 0 }} >
+              {this.state.currentTime}
+            </Text>
+
+            <Text style={{ position: 'absolute', right: 0 }}>
+              {this.state.duration}
+            </Text>
+
+          </View>
+
+          <Slider
+            trackStyle={customStyles3.track}
+            thumbStyle={customStyles3.thumb}
+            onSlidingStart={() => this.setState({ sliding: true })}
+            onSlidingComplete={() => this.setState({ sliding: false })}
+            minimumTrackTintColor='#eecba8'
+            thumbTouchSize={{ width: 20, height: 60 }}
+            value={this.state.value}
+            onValueChange={this.handleValueChange} />
+
         </View>
         <View style={{
           flex: 2,
@@ -158,10 +237,6 @@ export default class AudioPlay extends Component {
           flexDirection: 'row',
           alignItems: 'center'
         }}>
-
-          {/* <View> */}
-          {/* <Text>{this.state.currentTime} </Text> */}
-          {/* </View> */}
           <TouchableOpacity onPress={this.previousButton} >
             <Image style={styles.previousStyle} source={require('./img/previous.png')}>
             </Image>
@@ -174,6 +249,7 @@ export default class AudioPlay extends Component {
             </Image>
           </TouchableOpacity>
         </View>
+        {/* </View> */}
 
 
       </View >
@@ -182,6 +258,20 @@ export default class AudioPlay extends Component {
 
   }
 }
+
+var customStyles3 = StyleSheet.create({
+  track: {
+    height: 10,
+    borderRadius: 5,
+    backgroundColor: '#d0d0d0',
+  },
+  thumb: {
+    width: 10,
+    height: 30,
+    borderRadius: 10,
+    backgroundColor: '#eb6e1b',
+  }
+});
 
 const styles = StyleSheet.create({
   container: {
@@ -210,7 +300,7 @@ const styles = StyleSheet.create({
   titleContainer: {
     marginRight: 30,
     marginLeft: 30,
-    flex: 0.3,
+    flex: 1,
     justifyContent: 'center',
     alignItems: 'center'
   },
