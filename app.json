@@ -1,7 +1,4 @@
 {
-  "expo": {
-    "sdkVersion": "22.0.0"
-  },
-  "name": "App",
-  "displayName": "BAPS Audio"
+  "name": "AudioGuide",
+  "displayName": "AudioGuide"
 }

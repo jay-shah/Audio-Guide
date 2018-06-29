@@ -1,7 +1,7 @@
 package com.app;
 
 import android.app.Application;
-
+import com.facebook.react.BuildConfig;
 import com.facebook.react.ReactApplication;
 import com.BV.LinearGradient.LinearGradientPackage;
 import com.zmxv.RNSound.RNSoundPackage;

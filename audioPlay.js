@@ -121,6 +121,7 @@ export default class AudioPlay extends Component {
 
 
       this.tickInterval = setInterval(() => { this.tick(); }, 500);
+
       this.state.whoosh.play((success) => {
 
         if (success) {
